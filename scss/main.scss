@@ -1,0 +1,446 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contenedor {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.linea {
+  height: 14px;
+  border-left: 2px solid #511aea;
+  margin-left: 18px;
+}
+
+.banner {
+  width: 100%;
+  background-image: linear-gradient(to right, #04a8f5, #06f4f2);
+  padding: 20px 50px 0px;
+  display: flex;
+  justify-content: space-between;
+
+  &-logo1 {
+    width: 36%;
+    height: 260px;
+
+    &-finandina {
+      width: 47%;
+    }
+  }
+
+  &-logo2 {
+    width: 50%;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  &-logo3 {
+    width: 35%;
+    height: 260px;
+    background-image: url("/img/Grupo\ 15350.svg");
+  }
+}
+
+.banner-dos {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+
+  .seccion {
+    width: 46%;
+    margin: 35px 40px 10px;
+    padding: 1em;
+    color: #999;
+    font-size: 17px;
+
+    &-condiciones {
+      display: flex;
+      margin-top: 10px;
+
+      &-uno {
+        width: 149px;
+        border-radius: 10px;
+        margin: 5px;
+        box-shadow: 2px 2px 5px #999;
+        padding: 15px 34px 14px;
+        text-align: center;
+        align-items: center;
+
+        &-img1 {
+          height: 55px;
+          background-image: url("/img/Grupo\ 32.svg");
+          background-repeat: no-repeat;
+          margin: 0px 14px 0px;
+        }
+
+        &-img2 {
+          height: 55px;
+          background-image: url("/img/Grupo\ 7053.svg");
+          background-repeat: no-repeat;
+          margin: 0px 14px 0px;
+        }
+
+        &-img3 {
+          height: 55px;
+          background-image: url("/img/Grupo\ 7054.svg");
+          background-repeat: no-repeat;
+          margin: 0px 14px 0px;
+        }
+
+        &-texto {
+          border-bottom: 3px solid #06f4f2;
+          padding: 2px 10px 3px;
+          width: 80px;
+          font-size: 13px;
+        }
+
+        &-texto-dos {
+          padding: 8px 0px 0px;
+          color: #000;
+          font-size: 14px;
+        }
+      }
+    }
+
+    &-informacion {
+      padding: 1em;
+      display: flex;
+      padding: 15px 11px 14px;
+      margin: 8px 28px 5px;
+
+      &-uno {
+        margin: 15px;
+
+        &-texto {
+          text-align: center;
+          border-bottom: 3px solid #06f4f2;
+          font-size: 12px;
+        }
+
+        &-valor {
+          text-align: center;
+          color: #000;
+          font-size: 13px;
+        }
+      }
+    }
+
+    &-dinero {
+      font-size: 17px;
+
+      &-cuenta {
+        display: flex;
+        padding-top: 10px;
+        margin: 1px;
+
+        &-banco {
+          text-align: center;
+          margin: 10px;
+
+          &-numero {
+            text-align: right;
+            color: #000;
+          }
+        }
+      }
+
+      &-condiciones {
+        font-size: 10px;
+        color: #000;
+      }
+    }
+  }
+
+  .seccion-ultima {
+    width: 43%;
+    margin: 35px 5px 10px;
+    padding: 1em;
+    font-size: 17px;
+    color: #999;
+
+    &-horas {
+      margin: 30px 0px 25px;
+      display: flex;
+
+      &-texto {
+        padding: 10px;
+        color: #000;
+        font-weight: bold;
+      }
+    }
+
+    &-grupo {
+      display: flex;
+
+      &-texto {
+        padding: 10px;
+        color: #999;
+        font-size: 13px;
+      }
+    }
+
+    &-dudas {
+      margin-top: 20px;
+      font-size: 17px;
+
+      &-whatsapp {
+        display: flex;
+        margin-top: 30px;
+        margin-right: 10px;
+
+        &-texto {
+          width: 133px;
+          border-left: 2px solid #04a8f5;
+          margin: 5px;
+          padding: 3px;
+          font-size: 13px;
+        }
+      }
+    }
+
+    .boton-fin {
+      margin: 20px 70px 0px;
+    }
+  }
+}
+
+//responsive
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (max-width: 767px) {
+  .banner {
+    display: inline-block;
+
+    &-logo1 {
+      width: 25%;
+      height: 60px;
+
+      &-finandina {
+        width: 100%;
+      }
+
+      &-chulo {
+        display: none;
+      }
+    }
+
+    &-logo2 {
+      width: 60%;
+      margin: 10px 100px 10px;
+    }
+
+    &-logo3 {
+      display: none;
+    }
+  }
+
+  .banner-dos {
+    .seccion {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 488px) {
+  .banner {
+    display: inline-block;
+
+    &-logo1 {
+      width: 60%;
+
+      &-finandina {
+        width: 100%;
+      }
+    }
+
+    &-logo2 {
+      width: 90%;
+      margin: 0px 10px 0px;
+
+      &-texto {
+        margin: 5px 10px 10px;
+      }
+    }
+  }
+
+  .banner-dos {
+    .seccion {
+      width: 100%;
+      margin: 1px 0px 1px;
+      font-size: 15px;
+
+      &-condiciones {
+        display: inline-block;
+        margin: 15px 7px 15px;
+
+        &-uno {
+          padding: 5px 3px 5px;
+          text-align: left;
+          display: flex;
+          width: 100%;
+
+          &-img1 {
+            width: 60px;
+            background-image: url("/img/Grupo\ 32.svg");
+            background-repeat: no-repeat;
+            margin: 0px 14px 0px;
+          }
+  
+          &-img2 {
+            width: 60px;
+            background-image: url("/img/Grupo\ 7053.svg");
+            background-repeat: no-repeat;
+            margin: 0px 14px 0px;
+          }
+  
+          &-img3 {
+            width: 60px;
+            background-image: url("/img/Grupo\ 7054.svg");
+            background-repeat: no-repeat;
+            margin: 0px 14px 0px;
+          }
+
+          &-texto {
+            border-bottom: none;
+            width: 30%;
+
+            &-dos {
+              padding: 8px 13px 0px;
+            }
+          }
+        }
+      }
+
+      &-informacion {
+        padding: 4px 0px 4px;
+        margin: 4px 10px 5px;
+
+        &-uno {
+          margin: 4px;
+
+          &-texto {
+            font-size: 10px;
+          }
+
+          &-valor {
+            font-size: 10px;
+          }
+        }
+      }
+
+      &-dinero {
+        font-size: 15px;
+
+        &-cuenta {
+          &-banco {
+            text-align: left;
+            margin: 7px;
+            font-size: 13px;
+
+            &-numero {
+              font-size: 15px;
+            }
+          }
+        }
+
+        &-condiciones {
+          font-size: 8px;
+        }
+      }
+
+      &-ultima {
+        width: 100%;
+        padding: 5px 1px 5px;
+
+        &-gurpo {
+          &uno {
+            &-texto {
+              font-size: 11.5px;
+            }
+          }
+        }
+
+        &-dudas {
+          font-size: 13px;
+        }
+
+        .boton-fin {
+          margin: 15px 0px 10px;
+        }
+      }
+    }
+  }
+}
+
+.purple {
+  .banner{
+    background-image: linear-gradient(to right, #A703F6, #F7276C);
+    &-logo3 {
+      background-image: url("/img/Grupo\ 15328.svg");
+    }
+  }
+
+  .banner-dos {
+  
+    .seccion {
+  
+      &-condiciones {
+  
+        &-uno {
+          &-texto {
+            border-bottom: 3px solid #A703F6;
+          }
+
+          &-img1 {
+            background-image: url("/img/Grupo\ 15324.svg");
+          }
+
+          &-img2 {
+            background-image: url("/img/Grupo\ 15325.svg");
+          }
+
+          &-img3 {
+            background-image: url("/img/Grupo\ 15326.svg");
+          }
+        }
+      }
+  
+      &-informacion {
+  
+        &-uno {
+  
+          &-texto {
+            border-bottom: 3px solid #A703F6;
+          }
+        }
+      }
+    }
+  
+    .seccion-ultima {
+      &-dudas {
+        &-whatsapp {
+  
+          &-texto {
+            border-left: 2px solid #A703F6; 
+          }
+        }
+      }
+  
+    }
+  }
+}
